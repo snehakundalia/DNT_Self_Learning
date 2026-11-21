@@ -1,0 +1,7 @@
+if (ModelState.IsValid)
+{
+student.Id = nextId++; students.Add(student);
+return RedirectToAction("Index");
+}
+return View(student);
+
