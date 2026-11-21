@@ -1,0 +1,16 @@
+@model self_learning.Models.Student
+ 
+
+<form asp-controller="Student" asp-action="Create" method="post">
+
+<label asp-for="Name"></label>
+<input asp-for="Name" />
+<span asp-validation-for="Name"></span>
+
+<label asp-for="Email"></label>
+<input asp-for="Email" />
+
+<span asp-validation-for="Email"></span>
+<button type="submit"> Register Student
+</button>
+</form>
